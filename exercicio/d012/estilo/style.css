@@ -11,8 +11,8 @@ html, body {
 }
 
 header {
-    background-color: black;
-    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -27,13 +27,17 @@ padding-bottom: 50px;
 }
 
 header a, footer a {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bolder;
 }
 
 header a:hover, footer a:hover {
     text-decoration: underline;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section {
@@ -45,27 +49,47 @@ section {
 }
 
 section.normal {
-    background-color: aliceblue;
-    color: black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 section.imagem {
-    background-color: rgb(56, 56, 56);
+    background-color: rgb(39, 39, 39);
     color: aliceblue;
-
+    box-shadow: inset 6px 6px 13px 0px rgb(43, 43, 43);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.267);
-    display: inline-block
-
+    background-color: rgba(0, 0, 0, 0.377);
+    display: inline-block;
+    text-shadow: 1px 1px 0px black;
+    
 }
+
+section#img01 {
+background-image: url("../imagens/background001.jpg");
+background-position: center right -200px;
+}
+
+section#img02 {
+background-image: url('../imagens/background002.jpg');
+background-position: center;
+}
+
+
+
+
+
+
+
 
 
 
 footer {
     background-color: black;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
 }
