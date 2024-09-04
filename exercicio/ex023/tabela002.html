@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            background-color: rgb(65, 65, 65);
+            color: aliceblue;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 4px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: rgb(202, 202, 202);
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>Uso de tabelas grandes</strong></h1>
+
+    <table>
+        <caption>
+            Tabela 
+        </caption>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>Populacao</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sao Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>23 388 903</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>45 340 924</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td>0000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
